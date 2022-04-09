@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 
 // Initialize Firebas.
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_URL,
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "flower-shop-api.firebaseapp.com",
     databaseURL: "https://flower-shop-api-default-rtdb.firebaseio.com",
     projectId: "flower-shop-api",
