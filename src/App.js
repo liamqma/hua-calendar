@@ -74,8 +74,6 @@ function App() {
 
   const itemsArray = items ? Object.keys(items) : [];
 
-  console.log(user);
-
   return (
     <Box sx={{ width: "100%" }}>
       <Stack spacing={2}>
