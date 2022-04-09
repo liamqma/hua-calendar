@@ -10,7 +10,7 @@ function Login({ setUser }: { setUser: (user: User) => void }): JSX.Element {
     function onGoogleButtonClick(): void {
         setPersistence(auth, browserLocalPersistence).then(() => {
             signInWithPopup(auth, provider).then(result => setUser(result.user))
-        })
+        }).catch(error => console.log(error))
     }
 
     return (
