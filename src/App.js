@@ -33,7 +33,7 @@ const itemsRef = ref(db, "items");
 const isDateAvailableByDefaultRule = (date) => {
   const today = new Date();
   if (isSunday(date)) return false;
-  if (differenceInDays(date, today) < 7) return false;
+  if (differenceInDays(date, today) < 3) return false;
   return true;
 };
 
